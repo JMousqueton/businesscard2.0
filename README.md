@@ -1,2 +1,4 @@
 # businesscard2.0
-Landing zone for my NFC Business Card
+Créer votre propre carte de visite NFC 
+
+Ce site est la landing page de ma carte de visite NFC 
