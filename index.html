@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1"><link rel="manifest" href="/manifest.json">
+  <title>Julien Mousqueton</title>
+  <meta name="description" content="Business Card 2.0 of Julien Mousqueton.">
+  <meta itemprop="name" content="Julien Mousqueton">
+  <meta itemprop="description" content="Business Card 2.0 of Julien Mousqueton.">
+  <meta itemprop="image" content="/images/contact.jpg">
+  <meta property="og:url" content="https://add.julienmousqueton.fr">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Julien Mousqueton">
+  <meta property="og:description" content="Business Card 2.0 of Julien Mousqueton.">
+  <meta property="og:image" content="/images/contact.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Julien Mousqueton">
+  <meta name="twitter:description" content="Business Card 2.0 of Julien Mousqueton.">
+  <meta name="twitter:image" content="/images/contact.jpg">
+  <link href="/css/main.chunk.css" rel="stylesheet">
+  <link href="/css/chunk.css" rel="stylesheet">
+  <style type="text/css">
+  .lf-progress {
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    width: 100%;
+    /* margin: 0 10px; */
+    height: 4px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .lf-progress:focus {
+    outline: none;
+    border: none;
+  }
+  .lf-progress::-moz-range-track {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  .lf-progress::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    height: 13px;
+    width: 13px;
+    border: 0;
+    border-radius: 50%;
+    background: #0fccce;
+    cursor: pointer;
+  }
+  .lf-progress::-moz-range-thumb {
+    -moz-appearance: none !important;
+    height: 13px;
+    width: 13px;
+    border: 0;
+    border-radius: 50%;
+    background: #0fccce;
+    cursor: pointer;
+  }
+  .lf-progress::-ms-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  .lf-progress::-ms-fill-lower {
+    background: #ccc;
+    border-radius: 3px;
+  }
+  .lf-progress::-ms-fill-upper {
+    background: #ccc;
+    border-radius: 3px;
+  }
+  .lf-progress::-ms-thumb {
+    border: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #0fccce;
+    cursor: pointer;
+  }
+  .lf-progress:focus::-ms-fill-lower {
+    background: #ccc;
+  }
+  .lf-progress:focus::-ms-fill-upper {
+    background: #ccc;
+  }
+  .lf-player-container :focus {
+    outline: 0;
+  }
+  .lf-popover {
+    position: relative;
+  }
+
+  .lf-popover-content {
+    display: inline-block;
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -10px);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  }
+
+  .lf-popover-content.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0, 0px);
+  }
+
+  .lf-player-btn-container {
+    display: flex;
+    align-items: center;
+  }
+  .lf-player-btn {
+    cursor: pointer;
+    fill: #999;
+    width: 14px;
+  }
+
+  .lf-player-btn.active {
+    fill: #555;
+  }
+
+  .lf-popover {
+    position: relative;
+  }
+
+  .lf-popover-content {
+    display: inline-block;
+    position: absolute;
+    background-color: #ffffff;
+    opacity: 1;
+
+    transform: translate(0, -10px);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+    padding: 10px;
+  }
+
+  .lf-popover-content.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0, 0px);
+  }
+
+  .lf-arrow {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    bottom: -9px;
+    border-style: solid;
+    border-width: 10px 10px 0px 10px;
+  }
+
+  .lf-left-align,
+  .lf-left-align .lfarrow {
+    left: 0;
+    right: unset;
+  }
+
+  .lf-right-align,
+  .lf-right-align .lf-arrow {
+    right: 0;
+    left: unset;
+  }
+
+  .lf-text-input {
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    padding: 3px;
+    width: 60px;
+    margin: 0;
+  }
+
+  .lf-color-picker {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90px;
+  }
+
+  .lf-color-selectors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .lf-color-component {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lf-color-component strong {
+    width: 40px;
+  }
+
+  .lf-color-component input[type='range'] {
+    margin: 0 0 0 10px;
+  }
+
+  .lf-color-component input[type='number'] {
+    width: 50px;
+    margin: 0 0 0 10px;
+  }
+
+  .lf-color-preview {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+  }
+
+  .lf-preview {
+    height: 60px;
+    width: 60px;
+  }
+
+  .lf-popover-snapshot {
+    width: 150px;
+  }
+  .lf-popover-snapshot h5 {
+    margin: 5px 0 10px 0;
+    font-size: 0.75rem;
+  }
+  .lf-popover-snapshot a {
+    display: block;
+    text-decoration: none;
+  }
+  .lf-popover-snapshot a:before {
+    content: '⥼';
+    margin-right: 5px;
+  }
+  .lf-popover-snapshot .lf-note {
+    display: block;
+    margin-top: 10px;
+    color: #999;
+  }
+  .lf-player-controls > div {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .lf-player-controls > div:first-child {
+    margin-left: 0px;
+  }
+  .lf-player-controls > div:last-child {
+    margin-right: 0px;
+  }
+  </style>
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="App">
+        <div class="edit-profile-page profile-page dark">
+          <div class="container"><div class="edit-base-profile">
+            <div class="edit-profile__img"><div class="avatar-preloader" style="background-image: url('/images/avatar-loading.png');"></div>
+            <img alt="Profile Avatar" src="/images/julien.jpeg" style="object-fit: cover; width: 100%; height: 100%; border-radius: 50%;"></div>
+            <div class="profile-basic-info">
+              <div class="form-group">
+                <label class="profile-name form-label" for="formBasicEmail">Julien MOUSQUETON</label>
+                <form enctype="multipart/form-data" accept-charset="utf-8" method="post" action="/julienmousqueton.vcf">
+                  <input type="text" id="vcardName" name="filename" value="artist &amp;.vcf" style="display: none;">
+                  <textarea id="vcard" name="vcard" readonly="" style="display: none;"></textarea>
+                  <button class="edit-profile-upload-photo__btn" id="download-trigger">Add to contacts</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <span class="profile-bio">CTO Cyber Security @ Computacenter</span>
+          </div>
+        </div>
+        <div class="social-items__container dark">
+          <div class="edit-social-media-profiles">
+            <a href="tel:+33(0)633556428" class="profile-social" target="__blank">
+              <div class="profile-social-img__wrapper"><img src="/images/phone.png" class="profile-social-img" alt="socialImage">
+            </div>
+            <div class="profile-social-username__wrapper">
+              <span class="profile-social-username">06 33 55 63 28</span>
+            </div>
+            </a>
+          </div>
+          <div class="edit-social-media-profiles">
+            <a href="mailto:julien.mousqueton@computacenter.com" class="profile-social" target="__blank">
+              <div class="profile-social-img__wrapper">
+                <img src="/images/mail.png" class="profile-social-img" alt="socialImage">
+              </div>
+                <div class="profile-social-username__wrapper">
+                  <span class="profile-social-username">julien.mousqueton@computa...</span>
+                </div>
+            </a>
+          </div>
+          <div class="edit-social-media-profiles">
+            <a href="https://www.linkedin.com/in/julienmousqueton" class="profile-social" target="__blank">
+              <div class="profile-social-img__wrapper">
+                <img src="/images/linkedin.png" class="profile-social-img" alt="socialImage">
+              </div>
+              <div class="profile-social-username__wrapper">
+                <span class="profile-social-username">LinkedIn Profile</span>
+              </div>
+            </a>
+          </div>
+          <div class="edit-social-media-profiles">
+            <a href="https://twitter.com/jmousqueton" class="profile-social" target="__blank">
+              <div class="profile-social-img__wrapper">
+                <img src="/images/twitter.png" class="profile-social-img" alt="socialImage"></div>
+                <div class="profile-social-username__wrapper">
+                  <span class="profile-social-username">JMousqueton</span>
+                </div>
+              </a>
+            </div>
+          <div class="edit-social-media-profiles">
+            <a href="https://www.julien.io/" class="profile-social" target="__blank">
+              <div class="profile-social-img__wrapper">
+                <img src="/images/customurl_website.png" class="profile-social-img" alt="socialImage">
+              </div>
+              <div class="profile-social-username__wrapper">
+                <span class="profile-social-username">julien.io</span>
+              </div>
+            </a>
+          </div>
+          <div class="edit-social-media-profiles">
+            <a href="https://github/jmousqueton" class="profile-social" target="__blank">
+              <div class="profile-social-img__wrapper">
+                <img src="/images/github.png" class="profile-social-img" alt="socialImage">
+              </div>
+              <div class="profile-social-username__wrapper">
+                <span class="profile-social-username">JMousqueton</span>
+              </div>
+            </a>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
