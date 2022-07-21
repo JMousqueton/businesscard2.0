@@ -9,7 +9,9 @@ ROLE;CHARSET=UTF-8:CTO Cyber Security
 TITLE;CHARSET=UTF-8:CTO Cyber Security
 ORG;CHARSET=UTF-8:Computacenter
 URL;type=WORK;CHARSET=UTF-8:https://www.computacenter.com
+URL;type=HOME;CHARSET=UTF-8:https://www.julien.io
 X-SOCIALPROFILE;TYPE=twitter:https://twitter.com/JMousqueton
 X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/julienmousqueton
+KEY;MEDIATYPE=application/pgp-keys:https://keybase.io/jmousqueton/pgp_keys.asc
 REV:2022-07-16T23:15:00.801Z
 END:VCARD
