@@ -1,9 +1,11 @@
 # businesscard2.0
-Créez votre propre carte de visite NFC 
+Créez votre propre carte de visite NFC
+
+Retrouvez toutes les infos dans [ce billet](https://www.julien.io/nachetez-pas-de-cartes-de-visite-numeriques) de mon blog : https://www.julien.io
 
 Ce site est la landing page de ma carte de visite NFC 
 
-Les explications prochainement ;) en attendant les liens utils 
+Les liens vers les outils que j'ai utilisé :  
 
 Cartes NFC x10 9€ sur Amazon https://www.amazon.fr/YARONGTECH-NTAG215-compatibles-smartphones-appareils/dp/B08L4KLSRB/
 
