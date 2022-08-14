@@ -12,3 +12,4 @@ Cartes NFC x10 9€ sur Amazon https://www.amazon.fr/YARONGTECH-NTAG215-compatib
 Applications pour écrire sur les cartes NFC : 
 - Android : https://play.google.com/store/apps/details?id=com.wakdev.wdnfc&hl=fr&gl=US
 - Apple : https://apps.apple.com/fr/app/nfc-tools/id1252962749 
+☔️☔️
