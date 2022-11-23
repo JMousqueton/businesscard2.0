@@ -12,6 +12,6 @@ URL;type=WORK;CHARSET=UTF-8:https://www.computacenter.com
 URL;type=HOME;CHARSET=UTF-8:https://www.julien.io
 X-SOCIALPROFILE;TYPE=twitter:https://twitter.com/JMousqueton
 X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/julienmousqueton
-KEY;MEDIATYPE=application/pgp-keys:https://keybase.io/jmousqueton/pgp_keys.asc
+KEY;MEDIATYPE=application/pgp-keys:https://keys.openpgp.org/vks/v1/by-fingerprint/5000FDBC4C08044EF4B5DBE021AC94DE766B0F08
 REV:2022-07-16T23:15:00.801Z
 END:VCARD
